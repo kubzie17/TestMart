@@ -46,7 +46,7 @@ npm --version
 
 ```bash
 git clone <YOUR-INSTRUCTOR-REPOSITORY-URL>
-cd module3a-test-project-starter
+cd TestMart
 ```
 
 ## 3. Install dependencies
