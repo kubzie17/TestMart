@@ -45,7 +45,7 @@ npm --version
 ## 2. Clone the repository
 
 ```bash
-git clone <YOUR-INSTRUCTOR-REPOSITORY-URL>
+git clone https://github.com/kubzie17/TestMart.git
 cd TestMart
 ```
 
