@@ -1,0 +1,19 @@
+{
+  "name": "module3a-test-project-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Three-day Software Tester Academy Module 3A workshop project",
+  "scripts": {
+    "start": "node server.js",
+    "test:selenium": "jest tests/selenium --runInBand",
+    "test:cucumber": "cucumber-js features"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "selenium-webdriver": "^4.35.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "jest": "^30.1.3"
+  }
+}

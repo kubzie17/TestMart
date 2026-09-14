@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TestMart Checkout</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="card">
+      <p class="eyebrow">Module 3A Test Project</p>
+      <h1>TestMart Checkout</h1>
+      <p class="intro">
+        A small standalone frontend application for manual testing, exploratory testing,
+        DOM inspection, Selenium automation and BDD.
+      </p>
+
+      <div class="product" data-testid="product-card">
+        <div>
+          <h2 id="product-name">USB-C Travel Charger</h2>
+          <p id="unit-price">£20.00 each</p>
+        </div>
+
+        <label for="quantity">Quantity</label>
+        <input id="quantity" name="quantity" type="number" min="1" max="5" value="1" />
+      </div>
+
+      <section class="promo-section">
+        <label for="promo-code">Promo code</label>
+        <div class="row">
+          <input id="promo-code" name="promoCode" type="text" placeholder="Enter promo code" />
+          <button id="apply-promo" type="button">Apply code</button>
+        </div>
+        <p id="promo-message" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="customer-section">
+        <h2>Customer details</h2>
+
+        <label for="customer-name">Name</label>
+        <input id="customer-name" name="customerName" type="text" />
+
+        <label for="customer-email">Email</label>
+        <input id="customer-email" name="customerEmail" type="email" />
+      </section>
+
+      <section class="summary" aria-label="Order summary">
+        <div><span>Subtotal</span><strong id="subtotal">£20.00</strong></div>
+        <div><span>Discount</span><strong id="discount">£0.00</strong></div>
+        <div class="total-row"><span>Total</span><strong id="total">£20.00</strong></div>
+      </section>
+
+      <button id="checkout-button" class="primary" type="button">Place order</button>
+      <p id="checkout-message" role="status" aria-live="polite"></p>
+
+      <details class="help">
+        <summary>Test data hint</summary>
+        <p>One valid promotional code exists. The requirements document tells you what it is.</p>
+      </details>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
